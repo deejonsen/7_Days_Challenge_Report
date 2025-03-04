@@ -31,6 +31,8 @@ docker run --rm -it -p 80:80 vulnerables/web-dvwa
   - **Logged in with credentials: **`admin`** / **`password`**.**
   - **Set the security level to **Low** (DVWA Security tab).**
 
+---
+
 ### **2️⃣ Manual SQL Injection Exploit**
 **✔️ Bypassed Authentication:**
   - **Payload Used:** **`' OR '1'='1' -- `**
@@ -45,6 +47,7 @@ SELECT * FROM users WHERE user = '' OR '1'='1' -- ' AND password = '...';
 📌 **Output:** Logged in as admin without a valid password.
 
 
+---
 
 ### **3️⃣ Automated Exploitation with SQLMap**
 **✔️ Command Executed:**
@@ -63,6 +66,7 @@ available databases [2]:
 [*] information_schema
 ```
 
+---
 
 ### **🚀Key Takeaways**
 🔹**SQL Injection Risks:**
@@ -73,6 +77,7 @@ available databases [2]:
   - **Parameterized queries (e.g., using PDO in PHP).**
   - **Input validation (e.g., allow only alphanumeric characters in usernames).**
 
+---
 
 ![Screenshot 2025-03-04 105435](https://github.com/user-attachments/assets/be1c0958-8bee-4355-8186-f1913442869d)
 
