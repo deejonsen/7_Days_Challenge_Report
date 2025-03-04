@@ -25,7 +25,7 @@ sudo apt install wireshark -y  # Installed Wireshark via terminal
 wireshark
 ```
 
-
+---
 ### **2️⃣ Captured Network Traffic**
 **✔️ Steps Taken:**
 - **Selected an active network interface (e.g., `eth0` or `wlan0`).**
@@ -37,7 +37,7 @@ dns   # Filter DNS queries (domain lookups)
 icmp  # Filter ICMP packets (ping requests)
 ```
 
-
+---
 ### **3️⃣ Analyzed a PCAP File**
 **✔️ Sample PCAP File:**
 **Downloaded **PCAP file** from** [https://wiki.wireshark.org/uploads/27707187aeb30df68e70c8fb9d614981/http.cap)).
@@ -50,7 +50,7 @@ icmp  # Filter ICMP packets (ping requests)
   - **💡Protocol Risks:**
     - **Highlighted insecure protocols like **HTTP, FTP, & Telnet**  transmitting data unencrypted.**
 
-
+---
 ### **4️⃣ Identified Suspicious Activity**
 **🚨 Red Flags:**
 
@@ -63,13 +63,13 @@ icmp  # Filter ICMP packets (ping requests)
   - **Unknown IPs:**
     - **Used **`ip.addr == 192.168.1.100`** to track unrecognized IPs communicating with the host.
   
-
+---
 ### **🚀Key Takeaways**
 - **Wireshark Filters are critical for efficient analysis (e.g., `http.request.method == "POST`").**
 - **Plaintext protocols (HTTP, FTP) expose sensitive data to eavesdroppers.**
 - **Unusual traffic patterns (e.g., spikes in ICMP requests) may indicate reconnaissance or attacks.**
 
-
+---
 ![Screenshot 2025-03-04 103451](https://github.com/user-attachments/assets/82defe1a-93f8-458d-b261-d6047f2ced73)
 
 !![Screenshot 2025-03-04 103538](https://github.com/user-attachments/assets/0adf788f-abd2-4216-9a16-8c161fa2358a)
